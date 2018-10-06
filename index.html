@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="keys.js"></script>
+        <title>
+            Keywords is fun
+        </title>
+        <style>
+            
+        h1 {
+            font-family: monospace;
+            font-size: 40px;
+            text-align: center;
+            
+        }    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </style>
+    </head>
+    <body>
+       
+       
+       
+       <script>
+          // Once clicking the button is alerts you not to click it again
+           function Clickit(){ //
+               alert("Best not press that key again fam");
+           }
+           // Once pressing a key in the text bar it alerts you that you have pressed a key
+           function keyPress(e){
+            alert("Thanks, for pressing a random key")
+           }
+           
+           function MouseCoor(e){ // Once hovering over the button it executes the function MouseCoor in which shows the X an  Y Coordinates
+           // Had Technical Difficulties with it
+               var hec = e.clienthec; 
+               var gon = e.clientgon;
+               var Coordinate = "Coodinates: (" + hec + "," + gon  + ")";
+               document.getElementById("demo").innerHTML = Coordinate;
+               document.getElementById("demo").addEventListener("mousemove", Clearing);
+           }
+           function Clearing(){ // Clears the Coordinates Once moving outside the box of the button
+               document.getElementById("demo").innerHTML = "";
+           }
+            
+             
+                 function Copyfunc(){ // If you try to copy the words then it gives you an alert
+                     alert("Hands On!, Stick to that please..");
+                 }
+                 function Hovertext(){ // Once hovering over this button it tells you the truth
+                     alert("Id really be like that sometimes");
+                 }
+             
+           
+           
+       </script> 
+         
+      <h1><i><u>Javascript "Fun" Keyboard Library</u></i></h1>
+      
+      
+      <div class="container">
+          <div class="row">
+         <div class="col s6">
+             <button  class="waves-effect waves-light btn-large blue lighter-1" onClick="Clickit()" style="width:50%; margin-left: 50px; margin-top: 50px">Don't click it, I swear</button>
+         </div>
+         <div class="col s6">
+             <input class="waves-effect waves-light btn-large red lighter-1" style="margin-top:50px; margin-left: 50px; width:50%" onkeypress="keyPress()" placeholder="Press any random keys"></input>
+         </div>
+         <div class="col s6">
+             <button  class="waves-effect waves-light btn-large pink lighter-1" onmousemove="MouseCoor(event)" onmouseout="Clearing()" style="margin-top:50px; margin-left: 50px; width:50%">Hover for your coor!</button>
+             <p id="demo"></p>
+         </div>
+         <div class="col s6">
+             <p  onCopy="Copyfunc()" style="font-family: monospace; font-size: 30px; margin-left: 50px; margin-top: 50px">Hi, Im bob I like waffles... be like BOB... By the way dont not copy me</p>
+         </div>
+         <div class="col s6">
+             <button  class="waves-effect waves-light btn-large purple lighter-2" onMouseOver="Hovertext()" style="margin-top: 50px; margin-left: 50px; width:50%">Don't over hover me, I repeat do not</button>
+         </div>
+          
+          
+        
+        
+        
+          </div>
+          
+      </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+    </body>
+</html>

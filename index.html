@@ -60,6 +60,11 @@
                  function Hovertext(){ // Once hovering over this button it tells you the truth
                      alert("Id really be like that sometimes");
                  }
+                 
+                 function bigletters(){
+                     var exe = document.getElementById("bIG");
+                     exe.value = exe.value.toUpperCase();
+                 }
              
            
            
@@ -85,6 +90,10 @@
          </div>
          <div class="col s6">
              <button  class="waves-effect waves-light btn-large purple lighter-2" onMouseOver="Hovertext()" style="margin-top: 50px; margin-left: 50px; width:50%">Don't over hover me, I repeat do not</button>
+         </div>
+          <div class="col s6">
+              <p style="font-family: monospace; margin-top:50px">Please Enter your name in the space provided.. I meant the text box</p>
+             <input class="waves-effect waves-light btn-large green lighter-1" id="bIG" style="margin-top:50px; margin-left: 50px; width:50%" onkeyup="bigletters()" placeholder="Press any key Uppercase"></input>
          </div>
           
           
